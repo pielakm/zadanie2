@@ -2,11 +2,11 @@
 
 
 # Programowanie Aplikacji w Chmurze Obliczeniowej
-_- Numer zadania: 2
+
+- Numer zadania: 2
 - Imię i nazwisko: Mateusz Pielak
 - Grupa dziekańska: IO 6.7
-- Prowadzący: Dr inż. Sławomir Przyłucki_
-
+- Prowadzący: Dr inż. Sławomir Przyłucki
 
 ## 1. Logowanie się do github'a 
 ![logowanie](https://github.com/pielakm/zadanie2/assets/102603389/e7facc61-6d7f-496c-bd4a-726095b16864)
