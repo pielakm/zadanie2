@@ -2,7 +2,10 @@
 
 
 # Programowanie Aplikacji w Chmurze Obliczeniowej
-** Prowadzący: Dr inż. Sławomir Przyłucki **
+_Imię i nazwisko: Mateusz Pielak_
+_Grupa dziekańska: IO 6.7_
+_Prowadzący: Dr inż. Sławomir Przyłucki_ 
+
 ## 1. Logowanie się do github'a 
 ![logowanie](https://github.com/pielakm/zadanie2/assets/102603389/e7facc61-6d7f-496c-bd4a-726095b16864)
 ## 2. Inicjalizacja i tworzenie nowego repozytorium na potrzeby zadania
@@ -79,8 +82,11 @@
         
     # Metadane o autorze Dockerfile
     LABEL author="Mateusz Pielak"
+
 ```
+
 ## gha_example.yml
+
 ```
 name: GHAction example
 'on':
@@ -152,7 +158,9 @@ jobs:
             ${{ steps.meta.outputs.tags }}
           
 ```
+
 ## index.js
+
 ```
 const http = require('http');
 const os = require('node:os');
@@ -192,13 +200,16 @@ const server = http.createServer((req, res) => {
     res.write(pageContent);
     res.end();
 });
-
 // Uruchomienie serwera na porcie 3000
 server.listen(3000, () => {
     console.log('Serwer uruchomiony na porcie 3000...');
 });
+
 ```
+
 ## package.json
+
+
 ```
 {
   "name": "zadanie2",
@@ -216,6 +227,7 @@ server.listen(3000, () => {
     "express": "^4.19.2"
   }
 }
+
 ```
 
 
