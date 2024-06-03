@@ -51,18 +51,18 @@ jobs:
           image: '${{ steps.meta.outputs.tags }}'
           only-severities: 'critical,high'
           exit-code: true
-      - name: Check vulnerabilities
-        id: check_vulnerabilities
-        run: |
-          critical_vulns=$(echo '${{ steps.docker-scout.outputs.critical }}' | jq 'length')
-          high_vulns=$(echo '${{ steps.docker-scout.outputs.high }}' | jq 'length')
+      # - name: Check vulnerabilities
+      #   id: check_vulnerabilities
+      #   run: |
+      #     critical_vulns=$(echo '${{ steps.docker-scout.outputs.critical }}' | jq 'length')
+      #     high_vulns=$(echo '${{ steps.docker-scout.outputs.high }}' | jq 'length')
 
-          if [ "$critical_vulns" -gt 0 ] || [ "$high_vulns" -gt 0 ]; then
-            echo "Image has critical or high vulnerabilities. Not pushing to registry."
-            exit 1
-          else
-            echo "No critical or high vulnerabilities found."
-          fi
+      #     if [ "$critical_vulns" -gt 0 ] || [ "$high_vulns" -gt 0 ]; then
+      #       echo "Image has critical or high vulnerabilities. Not pushing to registry."
+      #       exit 1
+      #     else
+      #       echo "No critical or high vulnerabilities found."
+      #     fi
 
       - name: Log in to GitHub Container Registry
         if: success()
