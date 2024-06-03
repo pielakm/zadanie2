@@ -27,10 +27,10 @@
         
     # --------- ETAP 2 ------------------------
         
-    # FROM node:alpine
+    FROM node:alpine
 
     #wysokie ryzyko
-    FROM node:10
+    # FROM node:10
         
     # Ustawienie katalogu roboczego w kontenerze
     WORKDIR /usr/app
