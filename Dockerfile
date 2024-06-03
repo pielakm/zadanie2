@@ -27,7 +27,10 @@
         
     # --------- ETAP 2 ------------------------
         
-    FROM node:alpine
+    # FROM node:alpine
+    
+    #wysokie ryzyko
+    FROM ubuntu:latest
         
     # Ustawienie katalogu roboczego w kontenerze
     WORKDIR /usr/app
