@@ -1,4 +1,8 @@
-# Zadanie 2 - Programowanie Aplikacji w Chmurze Obliczeniowej
+![image](https://github.com/pielakm/zadanie2/assets/102603389/2a22ceba-4cff-4aa3-b8f4-d363a085d685)
+
+
+# Programowanie Aplikacji w Chmurze Obliczeniowej
+** Prowadzący: Dr inż. Sławomir Przyłucki **
 ## 1. Logowanie się do github'a 
 ![logowanie](https://github.com/pielakm/zadanie2/assets/102603389/e7facc61-6d7f-496c-bd4a-726095b16864)
 ## 2. Inicjalizacja i tworzenie nowego repozytorium na potrzeby zadania
