@@ -2,9 +2,11 @@
 
 
 # Programowanie Aplikacji w Chmurze Obliczeniowej
-_Imię i nazwisko: Mateusz Pielak_
-_Grupa dziekańska: IO 6.7_
-_Prowadzący: Dr inż. Sławomir Przyłucki_ 
+_- Numer zadania: 2
+- Imię i nazwisko: Mateusz Pielak
+- Grupa dziekańska: IO 6.7
+- Prowadzący: Dr inż. Sławomir Przyłucki_
+
 
 ## 1. Logowanie się do github'a 
 ![logowanie](https://github.com/pielakm/zadanie2/assets/102603389/e7facc61-6d7f-496c-bd4a-726095b16864)
@@ -25,6 +27,19 @@ _Prowadzący: Dr inż. Sławomir Przyłucki_
 ![ghrunview_wysokieryzyko](https://github.com/pielakm/zadanie2/assets/102603389/2f9886f1-655b-4e02-9330-16c4d18d7488)
 ![github_opis_ryzyko](https://github.com/pielakm/zadanie2/assets/102603389/ec01109a-f0bd-453c-8f24-e5e02564ef66)
 ![github_action_run_ryzyko](https://github.com/pielakm/zadanie2/assets/102603389/ba1d968b-386f-4fdb-b6ce-42739e26d14e)
+## 7. Utworzenie buildera zad2builder ,który wykorzystuje sterownik docker-container
+![tworzenie_buildera](https://github.com/pielakm/zadanie2/assets/102603389/2b89f304-04db-4295-a7f3-2576b6d6bfc1)
+## 8. Logowanie do githuba za pomocą tokenu
+![logowanie_github](https://github.com/pielakm/zadanie2/assets/102603389/adf8f917-a9ca-43d3-84c3-508f33d67ce2)
+## 9. Dodanie tagu i tworzenie paczki na githubie
+![tag_and_push](https://github.com/pielakm/zadanie2/assets/102603389/3eaddf3a-b3b3-4d51-8371-424f4aa0ae81)
+## 10. Pobranie i uruchomienie obrazu
+![Przechwytywanie](https://github.com/pielakm/zadanie2/assets/102603389/9513e68e-3392-4a08-b69b-0f1a8ecd2e2b)
+## 11. Zawartość obrazu w przeglądarce
+![dzialajace_localhost](https://github.com/pielakm/zadanie2/assets/102603389/ac4fc4ce-8b46-4b77-b93c-dba89de59457)
+
+
+
 
 ## Dockerfile
 ```
