@@ -1,7 +1,7 @@
 {
   "name": "zadanie2",
   "version": "1.0.0",
-  "description": "Bardzo prosta aplikacja: serwer http ze statyczną stroną www  Plik \"./github/workflows/gha_w4.yml\" definiuje: pipeline GitHub Actions  - budowanie obrazu multiarch,  - przesłanie na Dockerhub z nowym tagiem,  - wykorzystanie cache",
+  "description": "Aplikacja do zadania drugiego",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
