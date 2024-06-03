@@ -35,14 +35,13 @@ jobs:
         name: Buildx set-up
         uses: docker/setup-buildx-action@v3
 
-      - 
-         name: Login to DockerHub
+      -  name: Login to DockerHub
          uses: docker/login-action@v3
          with:
             username: ${{ vars.DOCKERHUB_USERNAME }}
             password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - 
-        name: Build and push Docker image
+
+      - name: Build and push Docker image
         id: docker_build
         uses: docker/build-push-action@v4
         with:
@@ -56,8 +55,7 @@ jobs:
             type=registry,ref=${{ vars.DOCKERHUB_USERNAME }}/zadanie2:cache  
           tags: ${{ steps.meta.outputs.tags }}
 
-      - 
-        name: Docker Scout Scan image for vulnerabilities
+      - name: Docker Scout Scan image for vulnerabilities
         id: docker-scout
         uses: docker/scout-action@v1
         with: 
@@ -67,8 +65,7 @@ jobs:
           only-severities: critical,high
           exit-code: true
 
-      - 
-        name: Check vulnerabilities
+      - name: Check vulnerabilities
         id: check_vulnerabilities
         run: |
           critical_vulns=$(echo "${{ steps.docker-scout.outputs.critical }}" | jq '. | length')
@@ -78,16 +75,15 @@ jobs:
             exit 1
           else
             echo "No critical or high vulnerabilities found."
-          fi
 
-        - 
-          name: Log in to GitHub Container Registry
+        - name: Log in to GitHub Container Registry
           if: success()
           uses: docker/login-action@v2
           with:
             registry: ghcr.io
             username: ${{ github.actor }}
             password: ${{ secrets.MYGITHUB_TOKEN }}
+
         - 
           name: Push Docker image to GitHub Container Registry
           if: success()
